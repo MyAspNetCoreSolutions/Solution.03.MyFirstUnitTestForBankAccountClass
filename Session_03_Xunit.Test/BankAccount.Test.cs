@@ -99,7 +99,19 @@ namespace Session_03_Xunit.Test
             Assert.True(result);
         }
 
-        
+        [Fact]
+        public void CustomerName_WhenIsMohammad_ExpectTrue()
+        {
+            //Arenge
+            BankAccount bankAccount = new BankAccount("Mohammad", 1000);
+
+
+            //Act
+
+            var result = bankAccount.CustomerName;
+            //Assert
+            Assert.Equal("Mohammad",result);
+        }
     }
     
 
